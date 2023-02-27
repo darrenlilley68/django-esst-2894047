@@ -47,4 +47,3 @@ def detail(request, pk):
     except Notes.DoesNotExist:
         raise Http404("Note doesn't exist")
     return render(request,'notes/notes_detail.html', {'note': note})
-
